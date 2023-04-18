@@ -1,9 +1,12 @@
 import os
 import pytest
+from Config.Config import Config
+
 if __name__ == '__main__':
-    allure_report = r"E:\playwright-demo\TestReport\allure_report"
-    allure_result = r"E:\playwright-demo\TestReport\allure_result"
-    screenshot = r"E:\playwright-demo\TestReport\screenshot_path"
+    AllureReport = Config.test_report_dir
+    AllureResult = Config.test_result_dir
+    Screenshot = Config.test_screenshot_dir
     os.system("del *.png")
-    pytest.main(["-v", "-s", '--reruns=3', f'--alluredir={allure_result}', "--clean-alluredir"])
-    os.system(f'allure generate {allure_result} -o {allure_report} --clean')
+    pytest.main(["-v", "-s", f'--alluredir={AllureResult}', "--clean-alluredir"])
+    # pytest.main(["-v", "-s", '--reruns=3', f'--alluredir={AllureResult}', "--clean-alluredir"])
+    os.system(f'allure generate {AllureResult} -o {AllureReport} --clean')
