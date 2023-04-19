@@ -7,6 +7,7 @@ Time: 2023/4/18
 """
 
 from playwright.sync_api import expect, Page
+from BuildInLibrary.BuildInLibrary import BuildInLibrary
 
 
 class BasePage:
@@ -41,6 +42,7 @@ class BasePage:
         :param frame_locator: 传入frame框架
         :return:
         """
+        value = BuildInLibrary().repalce_parameter(value)
         try:
             if frame_locator is not None:
                 self.page.frame_locator(selector=frame_locator).locator(selector_or_locator=locator).fill(value)

@@ -9,7 +9,7 @@ pageobject = None
 auth_path = None
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="class")
 def page():
     global pageobject
     global auth_path
