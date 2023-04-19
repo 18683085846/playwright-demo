@@ -2,7 +2,7 @@
 """
 describe：登录页面
 Author：tang
-Email：tallyx@163.com
+Email：tangllyx@163.com
 Time: 2023/4/17
 Software: PyCharm
 """

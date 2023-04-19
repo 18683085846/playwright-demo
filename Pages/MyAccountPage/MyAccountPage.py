@@ -2,7 +2,7 @@
 """
 describe：我的账号页面
 Author：tang
-Email：tallyx@163.com
+Email：tangllyx@163.com
 Time: 2023/4/17 
 Software: PyCharm
 """
@@ -16,6 +16,6 @@ class MyAccountPage(BasePage):
 
     @allure.step("断言安全退出可见")
     def logout_to_be_visible(self,locator):
-        self._ele_to_be_visible(locator)
+        return self._ele_to_be_visible(locator)
 
 

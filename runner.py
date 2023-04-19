@@ -7,6 +7,6 @@ if __name__ == '__main__':
     AllureResult = Config.test_result_dir
     Screenshot = Config.test_screenshot_dir
     os.system("del *.png")
-    pytest.main(["-v", "-s", f'--alluredir={AllureResult}', "--clean-alluredir"])
-    # pytest.main(["-v", "-s", '--reruns=3', f'--alluredir={AllureResult}', "--clean-alluredir"])
+    # pytest.main(["-v", "-s", f'--alluredir={AllureResult}', "--clean-alluredir"])
+    pytest.main(["-v", "-s", '--reruns=3', f'--alluredir={AllureResult}', "--clean-alluredir"])
     os.system(f'allure generate {AllureResult} -o {AllureReport} --clean')
