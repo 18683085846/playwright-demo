@@ -1,0 +1,1 @@
+[{"uid":"bae0d12942a17371","name":"Login02_登录成功","time":{"start":1681914868727,"stop":1681914872570,"duration":3843},"status":"passed","severity":"blocker"},{"uid":"66d07e4c5b7b440d","name":"Login01_密码错误登录失败","time":{"start":1681914862272,"stop":1681914866042,"duration":3770},"status":"passed","severity":"blocker"}]

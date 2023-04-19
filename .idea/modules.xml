@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/playwright-demo.iml" filepath="$PROJECT_DIR$/.idea/playwright-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../playwright基本使用/.idea/playwright基本使用.iml" filepath="$PROJECT_DIR$/../playwright基本使用/.idea/playwright基本使用.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tang/Desktop/tf102项目/pycharm_svn/shopXO_UI_pytest_pom/.idea/shopXO_UI_pytest_pom.iml" filepath="$PROJECT_DIR$/../tang/Desktop/tf102项目/pycharm_svn/shopXO_UI_pytest_pom/.idea/shopXO_UI_pytest_pom.iml" />
+    </modules>
+  </component>
+</project>
