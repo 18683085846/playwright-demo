@@ -1,5 +1,4 @@
 import time
-
 import allure, os
 import pytest
 from Pages.LoginPage.LoginPage import LoginPage
@@ -9,9 +8,9 @@ from Common.AllurePretty import PrettyAllure
 from Config.Config import Config
 
 
-class TestLogin():
+class TestLogin:
 
-    @pytest.mark.run(order=0)
+    @pytest.mark.run(order=1)
     @PrettyAllure.PrettyAllureWarpper
     @pytest.mark.parametrize("CaseData", ReadYaml(os.path.join(Config.test_datas_dir, "TestLoginData.yaml")).read())
     def test_login(self, page, CaseData: dict):

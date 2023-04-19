@@ -17,10 +17,11 @@ class LoginPage(BasePage):
     __password = "#password"
     __verify_code = "#verify_code"
     __login_button = 'a[name="sbtbutton"]'
+    __button_logout = 'a[title="退出"]'
 
     @allure.step("打开登录页面")
     def goto_login(self, url):
-        self.page.goto(url)
+        self._goto_url(url)
 
     @allure.step("输入账号")
     def fill_username(self, value):
@@ -37,6 +38,10 @@ class LoginPage(BasePage):
     @allure.step("点击登录按钮")
     def click_login_button(self):
         self._click(self.__login_button)
+
+    @allure.step("点击安全退出按钮")
+    def click_button_logout(self):
+        self._click(self.__button_logout)
 
     def browser_operation(self, reload=True, forward=False, back=False):
         self._browser_operation(reload=reload, forward=forward, back=back)

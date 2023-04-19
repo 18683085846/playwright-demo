@@ -51,9 +51,31 @@ class BasePage:
         except Exception as e:
             print(e)
 
+    def _type(self, locator, value, frame_locator=None):
+        """
+        模拟人工输入，一个键一个键的输入
+        :param locator:传入元素定位器
+        :param value:传入输入的值
+        :param frame_locator: 传入frame框架
+        :return:
+        """
+        value = BuildInLibrary().repalce_parameter(value)
+        try:
+            if frame_locator is not None:
+                self.page.frame_locator(selector=frame_locator).locator(selector_or_locator=locator).type(text=value,delay=100)
+            else:
+                self.page.type(selector=locator, text=value,delay=100)
+        except Exception as e:
+            print(e)
+
+
     def _ele_to_be_visible(self, locator):
         """断言元素可见"""
         return expect(self.page.locator(locator)).to_be_visible()
+
+    def _ele_is_checked(self,selector):
+        """判断元素是否被选选中"""
+        return self.page.is_checked(selector)
 
     def _browser_operation(self, reload=False, forward=False, back=False):
         """浏览器操作，reload 刷新，forward 前进，back 后退"""

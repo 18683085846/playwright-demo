@@ -1,0 +1,41 @@
+-
+  用例编号: Register01
+  模块: 用户
+  功能: 注册
+  优先级:  blocker
+  是否执行: Y
+  用例标题: 注册成功
+  用户名: "{{$random_phone}}"
+  密码: "123456"
+  确认密码: "123456"
+  验证码: "8888"
+  url地址: /index.php/Home/user/reg.html
+  断言元素定位: a[title="退出"]
+
+-
+  用例编号: Register02
+  模块: 用户
+  功能: 注册
+  优先级:  blocker
+  是否执行: Y
+  用例标题: 两次输入的密码不一致，注册失败
+  用户名: "{{$random_phone}}"
+  密码: "123456"
+  确认密码: "123456789"
+  验证码: "8888"
+  url地址: /index.php/Home/user/reg.html
+  断言元素定位: .layui-layer-content.layui-layer-padding
+
+-
+  用例编号: Register03
+  模块: 用户
+  功能: 注册
+  优先级:  blocker
+  是否执行: Y
+  用例标题: 重读手机号，注册失败
+  用户名: "13811111111"
+  密码: "123456"
+  确认密码: "123456"
+  验证码: "8888"
+  url地址: /index.php/Home/user/reg.html
+  断言元素定位: .layui-layer-content.layui-layer-padding

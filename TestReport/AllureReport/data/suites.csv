@@ -1,3 +1,6 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Apr 20 00:42:39 CST 2023","Thu Apr 20 00:42:41 CST 2023","2058","TestCases","Test_login","TestLogin","","","Login01_密码错误登录失败",""
-"passed","Thu Apr 20 00:42:41 CST 2023","Thu Apr 20 00:42:43 CST 2023","1892","TestCases","Test_login","TestLogin","","","Login02_登录成功",""
+"passed","Thu Apr 20 02:55:02 CST 2023","Thu Apr 20 02:55:06 CST 2023","4687","TestCases","Test_Register","TestRegister","","","Register02_两次输入的密码不一致，注册失败",""
+"passed","Thu Apr 20 02:55:06 CST 2023","Thu Apr 20 02:55:11 CST 2023","4101","TestCases","Test_Register","TestRegister","","","Register03_重读手机号，注册失败",""
+"passed","Thu Apr 20 02:55:14 CST 2023","Thu Apr 20 02:55:15 CST 2023","1614","TestCases","Test_Login","TestLogin","","","Login01_密码错误登录失败",""
+"passed","Thu Apr 20 02:55:15 CST 2023","Thu Apr 20 02:55:17 CST 2023","1345","TestCases","Test_Login","TestLogin","","","Login02_登录成功",""
+"passed","Thu Apr 20 02:54:52 CST 2023","Thu Apr 20 02:55:02 CST 2023","9519","TestCases","Test_Register","TestRegister","","","Register01_注册成功",""
