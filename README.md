@@ -4,20 +4,30 @@
 playwrightDemo，商城UI自动化
 
 #### 软件架构
-软件架构说明
+python语言，pytest测试框架，pom页面对象模型封装。
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  python 3.8
+2.  pip install -r requirements.txt
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. 执行runner.py运行，会自动收集测试用例
+2. Auth：登录认证保存后的认证信息
+3. BasePage：封装playwright的基础方法
+4. BuildInLibrary：环境变量存放文件夹，可进行用例参数关联
+5. Common：存放公共方法抽离文件夹
+6. Config：配置文件存放文件夹
+7. Logs：存放断言失败的记录
+8. Pages：存放页面对象文件
+9. TestCases：存放测试用例
+10. TestDatas：存放测试数据
+11. TestFiles：存放测试需要使用的文件
+12. TestReport：存放测试报告
+13. Utils：存放工具的封装
+14. runner.py：运行入口文件
 
 #### 参与贡献
 
