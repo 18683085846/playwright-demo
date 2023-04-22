@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"1a280d2af4eaef74cfcfdf5bf924d00a","name":"用户","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}
+{"total":2,"items":[{"uid":"1a280d2af4eaef74cfcfdf5bf924d00a","name":"用户","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}},{"uid":"1d7c480067ad6060dd9fe06167fad56b","name":"个人中心","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

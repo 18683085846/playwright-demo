@@ -7,7 +7,6 @@ Time: 2023/4/17
 Software: PyCharm
 """
 import allure
-
 from BasePage.BasePage import BasePage
 
 
@@ -18,6 +17,9 @@ class LoginPage(BasePage):
     __verify_code = "#verify_code"
     __login_button = 'a[name="sbtbutton"]'
     __button_logout = 'a[title="退出"]'
+
+    def del_auth(self):
+        self._del_auth()
 
     @allure.step("打开登录页面")
     def goto_login(self, url):

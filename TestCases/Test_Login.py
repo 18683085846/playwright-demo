@@ -1,4 +1,3 @@
-import time
 import allure, os
 import pytest
 from Pages.LoginPage.LoginPage import LoginPage
@@ -22,4 +21,4 @@ class TestLogin:
         new_page.fill_verify_code(CaseData["验证码"])
         new_page.click_login_button()
         MyAccountPage(page).logout_to_be_visible(CaseData["断言元素定位"])
-        # PrettyAllure(page, CaseData).PrettyAllureScreenShot()
+

@@ -18,6 +18,9 @@ class RegisterPage(BasePage):
     __checktxt = "#checktxt"
     __btn_agree = ".regbtn.J_btn_agree"
 
+    def del_auth(self):
+        self._del_auth()
+
     @allure.step("前往注册页面")
     def goto_register(self, url):
         self._goto_url(url)

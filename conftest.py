@@ -6,7 +6,7 @@ from playwright.sync_api import sync_playwright
 from Config.Config import Config
 
 pageobject = None
-auth_path = None
+auth_path = Config.auth_dir + os.path.sep + "auth.json"
 
 
 @pytest.fixture(scope="class")

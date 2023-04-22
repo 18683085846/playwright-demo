@@ -18,11 +18,13 @@ from Config.Config import Config
 
 class TestRegister:
 
+    @pytest.mark.smoking
     @pytest.mark.run(order=0)
     @PrettyAllure.PrettyAllureWarpper
     @pytest.mark.parametrize("CaseData", ReadYaml(os.path.join(Config.test_datas_dir, "TestRegisterData.yaml")).read())
     def test_register(self, page, CaseData: dict):
         rp = RegisterPage(page)
+        rp.del_auth()
         rp.goto_register(url=CaseData["url地址"])
         rp.type_username(username=CaseData["用户名"])
         rp.type_verify_code(CaseData["验证码"])

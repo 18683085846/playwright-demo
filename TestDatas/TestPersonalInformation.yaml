@@ -1,0 +1,11 @@
+-
+  用例编号: PersonalInformation01
+  模块: 个人中心
+  功能: 个人信息
+  优先级:  blocker
+  是否执行: Y
+  用例标题: 修改个人信息成功
+  url地址: /index.php/Home/User/info.html
+  断言元素定位: //span[text()="操作成功"]
+  files: profile_photo.png
+

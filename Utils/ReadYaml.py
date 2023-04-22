@@ -21,10 +21,15 @@ class ReadYaml(object):
             data = f.read()
         data_yaml = yaml.load(data, Loader=yaml.FullLoader)
         for value in data_yaml:
-            value["url地址"] = Config.url + value["url地址"]
+            # 拼接URL地址
+            if value.get("url地址") is not None:
+                value["url地址"] = Config.url + value["url地址"]
+            #拼接上传文件的地址
+            if value.get("files") is not None:
+                value["files"] = Config.test_files_dir + os.path.sep+ value["files"]
+
         return data_yaml
 
 
 if __name__ == '__main__':
-    y = ReadYaml(r"E:\playwright-demo\TestDatas\TestLoginData.yaml").read()
-    print(y)
+    pass
